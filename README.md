@@ -18,7 +18,7 @@
 
 ## config
 - add the code:
-    public static function routes($callback = null, array $options = ])
+-    public static function routes($callback = null, array $options = ])
     {
         $callback = $callback ?: function ($router) {
             $router;
