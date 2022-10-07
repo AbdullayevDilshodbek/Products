@@ -45,3 +45,13 @@ to the file:
 vendor/laravel/passport/src/Passport.php
 ## Api docs
 you can show api docs: http://127.0.0.1:8000/docs
+For get Token:
+url: http://127.0.0.1:8000/oauth/token
+method: post
+body: {
+    "grant_type": "password",
+    "client_id": 2,
+    "client_secret": "DwCBkPambiXxhvuag9k5fuhsI6r9OVwwDqy1HopW",
+    "username": "admin",
+    "password": "admin"
+}
