@@ -17,14 +17,7 @@
 - php artisan scribe:generate
 
 ## config
-add the code:
-    /**
-     * Binds the Passport routes into the controller.
-     *
-     * @param  callable|null  $callback
-     * @param  array  $options
-     * @return void
-     */
+- add the code:
     public static function routes($callback = null, array $options = ])
     {
         $callback = $callback ?: function ($router) {
