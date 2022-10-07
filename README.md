@@ -8,51 +8,51 @@
 </p>
 
 ## Instalition
-composer update
-npm install
-edit .env file
-php artisan key:generate
-php artisan migrate
-php artisan db:seed
-php artisan scribe:generate
+- [composer update
+- [npm install
+- [edit .env file
+- [php artisan key:generate
+- [php artisan migrate
+- [php artisan db:seed
+- [php artisan scribe:generate
 
 ## config
 add the code:
-    /**
-     * Binds the Passport routes into the controller.
-     *
-     * @param  callable|null  $callback
-     * @param  array  $options
-     * @return void
-     */
-    public static function routes($callback = null, array $options = [])
-    {
-        $callback = $callback ?: function ($router) {
-            $router;
-        };
-
-        $defaultOptions = [
-            'prefix' => 'oauth',
-            'namespace' => '\Laravel\Passport\Http\Controllers',
-        ];
-
-        $options = array_merge($defaultOptions, $options);
-
-        Route::group($options, function ($router) use ($callback) {
-            $callback(new RouteRegistrar($router));
-        });
-    }
-to the file:
-vendor/laravel/passport/src/Passport.php
+- [     /**
+- [      * Binds the Passport routes into the controller.
+- [      *
+- [      * @param  callable|null  $callback
+- [      * @param  array  $options
+- [      * @return void
+- [      */
+- [     public static function routes($callback = null, array $options = [])
+- [     {
+- [         $callback = $callback ?: function ($router) {
+- [             $router;
+- [         };
+- [ 
+- [         $defaultOptions = [
+- [             'prefix' => 'oauth',
+- [             'namespace' => '\Laravel\Passport\Http\Controllers',
+- [         ];
+- [ 
+- [         $options = array_merge($defaultOptions, $options);
+- [ 
+- [         Route::group($options, function ($router) use ($callback) {
+- [             $callback(new RouteRegistrar($router));
+- [         });
+- [     }
+- [ to the file:
+- [ vendor/laravel/passport/src/Passport.php
 ## Api docs
 you can show api docs: http://127.0.0.1:8000/docs
 ## For get Token
-url: http://127.0.0.1:8000/oauth/token
-method: post
-body: {
-    "grant_type": "password",
-    "client_id": 2,
-    "client_secret": "DwCBkPambiXxhvuag9k5fuhsI6r9OVwwDqy1HopW",
-    "username": "admin",
-    "password": "admin"
-}
+- [url: http://127.0.0.1:8000/oauth/token
+- [method: POST
+- [body: {
+- [    "grant_type": "password",
+- [    "client_id": 2,
+- [    "client_secret": "DwCBkPambiXxhvuag9k5fuhsI6r9OVwwDqy1HopW",
+- [    "username": "admin",
+- [    "password": "admin"
+- [}
