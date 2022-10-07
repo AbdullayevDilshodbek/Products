@@ -16,6 +16,7 @@ php artisan migrate
 php artisan db:seed
 php artisan scribe:generate
 
+## config
 add the code:
     /**
      * Binds the Passport routes into the controller.
@@ -45,7 +46,7 @@ to the file:
 vendor/laravel/passport/src/Passport.php
 ## Api docs
 you can show api docs: http://127.0.0.1:8000/docs
-For get Token:
+## For get Token
 url: http://127.0.0.1:8000/oauth/token
 method: post
 body: {
