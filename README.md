@@ -49,3 +49,5 @@ you can show api docs: http://127.0.0.1:8000/docs
 -     "username": "admin",
 -     "password": "admin"
 - }
+
+![linux](https://github.com/AbdullayevDilshodbek/Products/blob/main/320424.jpg)
